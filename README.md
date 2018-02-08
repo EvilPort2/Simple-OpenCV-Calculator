@@ -8,6 +8,8 @@ Check it out here in this <a href ="">video</a>
 1. Simple HSV masking is bad for skin segmentation. This is why I am using a dark room.
 2. Gesture for confirming a number (i.e making a fist) and for "one" needs improving. 
 
+Really need help with these two. Please help me if you can.
+
 ## Requirements
 1. OpenCV
 2. Numpy
