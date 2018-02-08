@@ -2,7 +2,7 @@
 A gesture controlled calculator.
 
 ## Outcome
-Check it out here in this <a href ="">video</a>
+Check it out here in this <a href ="https://youtu.be/87hY0eTVUas">video</a>
 
 ## Problems being faced
 1. Simple HSV masking is bad for skin segmentation. This is why I am using a dark room.
