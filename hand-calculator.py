@@ -51,7 +51,7 @@ def get_hand_hist():
 			cv2.imshow("Thresh", thresh)
 		if not flagPressedS:
 			imgCrop = build_squares(img)
-		cv2.imshow("img", img)
+		cv2.imshow("Set hand histogram", img)
 	cam.release()
 	cv2.destroyAllWindows()
 	return hist
@@ -90,7 +90,7 @@ def start_calculator():
 		fingers = 0
 		if len(contours) > 0:
 			contour = max(contours, key = cv2.contourArea)
-			if cv2.contourArea(contour) > 700:
+			if cv2.contourArea(contour) > 2000:
 				cv2.drawContours(imgCrop, [contour], 0, (0, 0, 255), 2)
 				M = cv2.moments(contour)
 				if M['m00'] != 0:
