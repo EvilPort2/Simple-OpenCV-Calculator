@@ -18,6 +18,7 @@ Really need help with these two. Please help me if you can.
 1. Run the hand-calculator.py file using the command below
 
     python3 hand-calculator.py
+    
 2. A windows "Set hand histogram" will appear.
 3. "Set hand histogram" will have 50 squares (5x10).
 4. Put your hand in those squares.
