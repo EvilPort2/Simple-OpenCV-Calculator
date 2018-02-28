@@ -2,7 +2,7 @@
 A gesture controlled calculator.
 
 ## Outcome
-Check it out here in this <a href ="https://youtu.be/6bE9veUsQf4">video</a>
+Check it out here in this <a href ="https://youtu.be/Q5oeA-ebL7c">video</a>
 
 ## Requirements
 1. OpenCV
@@ -44,7 +44,8 @@ Check it out here in this <a href ="https://youtu.be/6bE9veUsQf4">video</a>
 You do not need to retrain your model every time. In case you added or removed a gesture then you need to retrain it.
 
 ### Running the calculator
-1. Run the hand-calculator.py file using the command below
+0. Make sure you have already run the set_hand_hist.py file to set the histogram.
+  1. Run the hand-calculator.py file using the command below
 
     python3 hand-calculator.py
     

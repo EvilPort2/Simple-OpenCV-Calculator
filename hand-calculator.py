@@ -111,7 +111,15 @@ def start_calculator():
 				else:
 					count_same_frames = 0
 
-				if pred_text == "Confirm" and count_same_frames > 20:
+
+				if pred_text == "C":
+					if count_same_frames > 5:
+						count_same_frames = 0
+						first, second, operator, pred_text, calc_text = '', '', '', '', ''
+						flag['first'], flag['operator'], flag['second'], flag['clear'] = False, False, False, False
+						info = "Enter first number"
+
+				elif pred_text == "Confirm" and count_same_frames > 15:
 					count_same_frames = 0
 					if flag['clear']:
 						first, second, operator, pred_text, calc_text = '', '', '', '', ''
@@ -130,29 +138,31 @@ def start_calculator():
 
 				elif pred_text != "Confirm":
 					if flag['first'] == False:
-						if count_same_frames > 20:
+						if count_same_frames > 15:
 							count_same_frames = 0
 							first += pred_text
 							calc_text += pred_text
 					elif flag['operator'] == False:
 						operator = get_operator(pred_text)
-						if count_same_frames > 25:
+						if count_same_frames > 15:
 							count_same_frames = 0
 							flag['operator'] = True
 							calc_text += operator
 							info = "Enter second number"
 							operator = ''
 					elif flag['second'] == False:
-						if count_same_frames > 20:
+						if count_same_frames > 15:
 							second += pred_text
 							calc_text += pred_text
 							count_same_frames = 0	
 
+
+
 		if count_clear_frames == 30:
+			first, second, operator, pred_text, calc_text = '', '', '', '', ''
+			flag['first'], flag['operator'], flag['second'], flag['clear'] = False, False, False, False
+			info = "Enter first number"
 			count_clear_frames = 0
-			calc_text = ""
-			pred_text = ""
-			operator = ""
 
 		blackboard = np.zeros((480, 640, 3), dtype=np.uint8)
 		cv2.putText(blackboard, "Predicted text - " + pred_text, (30, 40), cv2.FONT_HERSHEY_TRIPLEX, 1, (255, 255, 0))
