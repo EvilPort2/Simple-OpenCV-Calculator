@@ -1,6 +1,9 @@
 # Simple-OpenCV-Calculator
 A gesture controlled calculator.
 
+## Note
+If you are looking for a program that can <b>recognize the 26 alphabets of the American Sign Language</b> then visit <a href="http://github.com/evilport2/sign-language">here</a>.
+
 ## Outcome
 Check it out here in this <a href ="https://youtu.be/Q5oeA-ebL7c">video</a>
 
