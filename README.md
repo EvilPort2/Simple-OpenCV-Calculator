@@ -2,7 +2,7 @@
 A gesture controlled calculator.
 
 ## Note
-If you are looking for a program that can <b>recognize the 26 alphabets of the American Sign Language</b> then visit <a href="http://github.com/evilport2/sign-language">here</a>.
+<b>This project is longer actively maintained. This project is now merged with Sign-Language. See the README of <a href="https://github.com/evilport2/sign-language">Sign-Language</a></b>.
 
 ## Outcome
 Check it out here in this <a href ="https://youtu.be/Q5oeA-ebL7c">video</a>
