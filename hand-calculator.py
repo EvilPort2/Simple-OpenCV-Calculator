@@ -130,7 +130,10 @@ def start_calculator():
 						info = "Clear screen"
 						second = ''
 						flag['clear'] = True
-						calc_text += "= "+str(eval(calc_text))
+						try:
+							calc_text += "= "+str(eval(calc_text))
+						except:
+							calc_text = "Invalid operation"
 					elif first != '':
 						flag['first'] = True
 						info = "Enter operator"
