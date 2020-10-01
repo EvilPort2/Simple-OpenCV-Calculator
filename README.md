@@ -7,7 +7,7 @@ A gesture controlled calculator.
 ## Outcome
 Check it out here in this <a href ="https://youtu.be/Q5oeA-ebL7c">video</a>
 
-## Requirements
+## Required Python Module
 1. OpenCV
 2. Numpy
 3. Keras with Tesorflow as backend
